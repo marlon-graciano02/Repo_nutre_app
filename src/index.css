@@ -1,0 +1,57 @@
+:root {
+  --crema: #f9f6f0;
+  --verde: #4a7c2f;
+  --verde-hoja: #8ab661;
+  --verde-oscuro: #2f5a1c;
+  --verde-bosque: #1f5a35;
+  --pizarra: #3e5b55;
+  --tinta: #2b3a2f;
+  --verde-claro: #e6f0d8;
+  --font-titulo: 'Nunito', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --font-cuerpo: 'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-cuerpo);
+  color: var(--tinta);
+  background: var(--crema);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-titulo);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--verde-hoja);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+  }
+}
